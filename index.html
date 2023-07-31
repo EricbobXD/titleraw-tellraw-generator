@@ -78,9 +78,9 @@
 
       var command;
       if (type !== "") {
-        command = `/titleraw ${selector} ${type} ${showElement}`;
+        command = `/titleraw ${selector} ${type} {"rawtext":[${showElement}]}`;
       } else {
-        command = `/tellraw ${selector} ${showElement}`;
+        command = `/tellraw ${selector} {"rawtext":[${showElement}]}`;
       }
       document.getElementById("preview").textContent = command;
     }
