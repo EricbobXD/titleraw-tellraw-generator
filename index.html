@@ -80,7 +80,7 @@
       if (type !== "") {
         command = `/titleraw ${selector} ${type} {"rawtext":[${showElement}]}`;
       } else {
-        command = `/tellraw ${selector} {"rawtext":[${showElement}]}`;
+        command = `/tellraw ${selector} {"rawtext":[ ${showElement} ]}`;
       }
       document.getElementById("preview").textContent = command;
     }
